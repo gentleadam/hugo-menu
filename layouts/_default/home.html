@@ -1,14 +1,31 @@
 {{ define "main" }}
-  
+  <div class="hero">
+    <h1>{{ site.Title }}</h1>
+  </div>
   <div id="home-content-container">
     {{ .Content }}
+    
+    <div id="contact">
+      <div class="contact-item">
+        <a href="tel:{{ .Site.Params.phone }}">
+          <span class="material-symbols-outlined">
+            call
+          </span>
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <a href="{{ .Site.Params.bookingUrl }}">
+          <span class="material-symbols-outlined">
+            calendar_month
+          </span>
+        </a>
+      </div>
+    </div>
   </div>
-  <span class="material-symbols-outlined">
-    arrow_downward
-  </span>
   <div id="home-menus-container">
     {{ range site.RegularPages }}
-      <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+    <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
       {{ .Summary }}
     {{ end }}
   </div>

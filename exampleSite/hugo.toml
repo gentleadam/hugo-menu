@@ -1,3 +1,7 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Bistro Lumière'
+
+[params]
+    bookingUrl = 'https://www.example.co.uk'
+    phone = '+44123456'

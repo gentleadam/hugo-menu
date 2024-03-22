@@ -5,6 +5,8 @@ body {
   font-style: normal;
   background-color: #f9f9f9;
   text-align: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 header {
@@ -24,6 +26,11 @@ footer {
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+}
+
+.contact-item {
+  display: inline;
+  padding: 10px;
 }
 
 .menu-item {
@@ -59,12 +66,17 @@ hr {
   border: none;
 }
 
+a {
+  text-decoration: underline;
+  color: #000;
+}
+
 #home-content-container {
   padding: 50px;
 }
 
 #home-menus-container {
-  padding: 50px;
+  padding: 0px 50px 50px;
 }
 
 .back-arrow-container {
